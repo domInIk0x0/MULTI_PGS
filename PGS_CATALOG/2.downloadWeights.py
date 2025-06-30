@@ -14,7 +14,7 @@ df_no_duplicates = filtered_df.drop_duplicates(subset='Trait', keep='first')
 links = df_no_duplicates['Download Link'].values
 traits = df_no_duplicates ['Trait'].values
 
-dir_path = '/mnt/ip114/DominikPietrzak/gene/pgs_weights/PGS_CATALOG_WEIGHTS/'
+dir_path = 'PGS_CATALOG_WEIGHTS/'
 folders = os.listdir(dir_path)
 
 for f in folders:
