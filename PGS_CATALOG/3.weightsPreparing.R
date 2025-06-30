@@ -1,7 +1,7 @@
 library(data.table)
 library(readr)
 
-folders <- list.dirs('/mnt/ip114/DominikPietrzak/gene/pgs_weights/PGS_CATALOG_WEIGHTS/', recursive = FALSE)
+folders <- list.dirs('PGS_CATALOG_WEIGHTS/', recursive = FALSE)
 
 for (f in folders) {
   file <- file.path(f, list.files(f)[1])
